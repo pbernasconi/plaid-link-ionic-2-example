@@ -49,13 +49,14 @@ interface LinkOnSuccessMetadata {
 interface LinkOnExitMetadata {
   institution?: { name: string, institution_id: string };
   account?: { id: string, name: string };
-  link_request_id?: string;
+  request_id?: string;
 }
 
 interface LinkOnExitError {
-  error_type: string,
+  display_message: string,
   error_code: string,
   error_message: string
+  error_type: string,
 }
 
 interface LinkHandlerExitConfig {
